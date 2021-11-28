@@ -99,3 +99,14 @@ button {
 .detail-name {
   font-size: 32px;
 }
+
+@media screen and (max-width: 768px) {
+  .result-item {
+    width: 48%;
+  }
+}
+@media screen and (max-width: 560px) {
+  .result-item {
+    width: 100%;
+  }
+}
