@@ -1,0 +1,101 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto Mono', monospace;
+}
+
+button {
+  font-family: 'Roboto Mono', monospace;
+  padding: 12px 24px;
+  background-color: black;
+  color: #fff;
+  border-radius: 5px;
+  font-size: 18px;
+}
+
+.search {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5% 2%;
+}
+
+#beername {
+  border: 2px solid black;
+  height: 32px;
+}
+
+.results {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  padding: 0 2%;
+  justify-content: space-between;
+  row-gap: 24px;
+}
+
+.result-item {
+  border: 2px solid black;
+  padding: 10px;
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.result-img {
+  height: 240px;
+  max-width: 100%;
+  object-fit: contain;
+}
+
+.popup {
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+
+.popup.popup-visible {
+  display: flex;
+}
+
+.popup-content {
+  background-color: #fff;
+  height: 80vh;
+  width: 50vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 20px;
+  row-gap: 20px;
+}
+
+.close {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.detail-img {
+  height: 50%;
+  max-width: 100%;
+  object-fit: contain;
+}
+
+.detail-name {
+  font-size: 32px;
+}
